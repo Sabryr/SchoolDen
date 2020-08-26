@@ -1,6 +1,6 @@
 #Introduction
-A newly married couple is moving to Toronto. John works mainly from home and traveling to the office only one day per week. 
-Anne,  has not found a job yet and she is a trained teacher. After moving to Toronto she would start looking for work. 
+John and Anne are moving to Toronto. John works mainly from home and traveling to the office only one day per week. 
+Anne has not found a job yet and she is a trained teacher. After moving to Toronto she would start looking for work. 
 They are also planing to have children. Therefore, they decided to purchase a house in a neighborhood where there is a high density of schools.
 This would increase the chance that Anne would find a job near the house so she can minimize traveling. Then when they have children 
 there is a high probability that they can find a school near the house.
@@ -12,3 +12,11 @@ there is a high probability that they can find a school near the house.
 2. Wikipedia page https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M" : 
 To get a list of Postal codes in Toronto in the province of Ontario.
 
+#Procedure 
+
+1. Obtain a list of schools using the Foursquare API 
+2. Group them by postal code
+3. Cluster the post codes by using school density
+4. Use the Wikipedia table to get a full list of postcodes 
+4. Append a column with the cluster value
+5. Use Folium to visualize this on a map
