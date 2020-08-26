@@ -7,13 +7,11 @@ there is a high probability that they can find a school near the house.
 
 
 ## Data
-
 1. Foursquare location data : to obtain school locations latitude,longitude 
 2. Wikipedia page https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M" : 
 To get a list of Postal codes in Toronto in the province of Ontario.
 
 ## Procedure 
-
 1. Obtain a list of schools using the Foursquare API 
 2. Group them by postal code
 3. Cluster the post codes by using school density
