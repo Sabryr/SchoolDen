@@ -1,4 +1,4 @@
-#Introduction
+## Introduction
 John and Anne are moving to Toronto. John works mainly from home and traveling to the office only one day per week. 
 Anne has not found a job yet and she is a trained teacher. After moving to Toronto she would start looking for work. 
 They are also planing to have children. Therefore, they decided to purchase a house in a neighborhood where there is a high density of schools.
@@ -6,13 +6,13 @@ This would increase the chance that Anne would find a job near the house so she 
 there is a high probability that they can find a school near the house.
 
 
-#Data
+## Data
 
 1. Foursquare location data : to obtain school locations latitude,longitude 
 2. Wikipedia page https://en.wikipedia.org/wiki/List_of_postal_codes_of_Canada:_M" : 
 To get a list of Postal codes in Toronto in the province of Ontario.
 
-#Procedure 
+## Procedure 
 
 1. Obtain a list of schools using the Foursquare API 
 2. Group them by postal code
