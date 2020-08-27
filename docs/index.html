@@ -75,8 +75,7 @@
       <ul>
           <li>Read the Wikipedia URL to a Pandas data frame</li>
           <li>Selectively copy the table with the required data to a nother pandas dataframe</li>
-          <li>
-              Top 5 columns of the dataframe created this way
+          <li> Top 5 columns of the dataframe created this way </li>
             <table border="1">
               <thead>
                <tr style="text-align: center; background-color:#b4cfd5" >
@@ -86,7 +85,7 @@
                 <th>Neighbourhood</th>
                </tr>
              </thead>
-            <tbody style="background-color:#d2e4e8">
+             <tbody style="background-color:#d2e4e8">
              <tr>
                <th>0</th>
                <td>M1A</td>
@@ -119,9 +118,47 @@
              </tr>
             </tbody>
           </table>
-         <li>
-       </ul>
+      </ul>
      <li>Obtain a list of schools using the Foursquare API</li>
+        <ul>
+         <li> Get raw jason responce using REST API </li>
+         <li>Read in normalized values to a Pandas dataframe</li>
+         <li>Frist three columns of final data frame</li>
+          <table border="1">
+          <thead>
+           <tr style="text-align: center; background-color:#b4cfd5">
+            <th></th>
+            <th>Name</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>PostalCode</th>
+          </tr>
+          </thead>
+          <tbody  style="background-color:#d2e4e8">
+           <tr> 
+            <th>0</th>
+            <td>SCHOOL Restaurant</td>
+            <td>43.637775</td>
+            <td>-79.424297</td>
+            <td>M6K</td>
+          </tr>
+          <tr>
+           <th>1</th>
+           <td>Nella Cucina</td>
+           <td>43.667122</td>
+           <td>-79.412022</td>
+           <td>M5R</td>
+         </tr>
+         <tr>
+          <th>2</th>
+          <td>ILSC</td>
+          <td>43.654743</td>
+          <td>-79.387793</td>
+          <td>M5G</td>
+        </tr>
+       </tbody>
+       </table>
+     </ul>
      <li>Group them by postal code</li>
      <li>Cluster the post codes by using school density</li>
      <li>Append a column with the cluster value</li>
