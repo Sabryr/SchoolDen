@@ -24,6 +24,11 @@
            margin-right: auto;
            justify-content: center
           }
+    h3   {
+           color: #202a58;
+           font-size: 14px;
+           padding: 1px;
+         }
      p {
        margin:  1px;
        max-width: 85%;
@@ -118,6 +123,7 @@
              </tr>
             </tbody>
           </table>
+          <h3>Table 1</h3>
       </ul>
      <li>Obtain a list of schools using the Foursquare API</li>
         <ul>
@@ -158,6 +164,7 @@
         </tr>
        </tbody>
        </table>
+       <h3>Table 2</h3>
      </ul>
      <li>Count number of schools in each postcode</li>
       <ul>
@@ -184,10 +191,85 @@
        </tr>
       </tbody>
       </table>
+      <h3>Table 3</h3>
       </ul>
      <li>Cluster the post codes by using school density</li>
+         <ul>
+            <table border="1">
+            <thead>
+              <tr  style="text-align: center; background-color:#b4cfd5">
+               <th>PostalCode</th>
+               <th>ClusterLabels</th>
+              </tr>
+           </thead>
+           <tbody  style="background-color:#d2e4e8">
+           <tr>
+            <th>M6G</th>
+            <td>2</td>
+           </tr>
+           <tr>
+            <th>M6H</th>
+            <td>1</td>
+           </tr>
+           <tr>
+            <th>M6K</th>
+            <td>0</td>
+          </tr>
+         </tbody>
+         </table>
+         <h3>Table 4</h3>
+       </ul>  
      <li>Append a column with the cluster value</li>
+<table border="1">
+  <thead>
+    <tr  style="text-align: center; background-color:#b4cfd5"">
+      <th></th>
+      <th>PostalCode</th>
+      <th>District</th>
+      <th>Neighbourhood</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>ClusterLabels</th>
+    </tr>
+  </thead>
+  <tbody  style="background-color:#d2e4e8">
+    <tr>
+      <th>26</th>
+      <td>M9C</td>
+      <td>Etobicoke</td>
+      <td>Eringate, Bloordale Gardens, Old Burnhamthorpe...</td>
+      <td>43.637892</td>
+      <td>-79.580519</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>M6E</td>
+      <td>York</td>
+      <td>Caledonia-Fairbanks</td>
+      <td>43.679217</td>
+      <td>-79.441730</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td>M5G</td>
+      <td>Downtown Toronto</td>
+      <td>Central Bay Street</td>
+      <td>43.654743</td>
+      <td>-79.387793</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+<h3>Table 4</h3>
      <li>Use Folium to visualize this on a map</li>
+        <ul>
+          <li>One schools -blue</li> 
+          <li>Two schools - green</li> 
+          <li>Four schools - Red </li>
+         <img src="Schhol_map.png" alt="Schools map" style="max-width:80%; margin-left: auto; margin-right: auto;">
+       </ul>
    </ol>
   </p>
   
