@@ -38,6 +38,15 @@
        margin-right: auto;
        background: #fff5e4;
     }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+    
    </style>
  </head>
  <body>
@@ -49,7 +58,6 @@
 	Anne has not found a job yet and she is a trained teacher. After moving to Toronto she would start looking for work.
 	They are also planing to have children. Therefore, they decided to purchase a house in a neighborhood where there is a high density of schools.
 	This would increase the chance that Anne would find a job near the house so she can minimize traveling. Then when they have children
-	there is a high probability that they can find a school near the house.
   </p>
   <h2>Data</h2>
   <p>
@@ -63,15 +71,64 @@
   <h2>Procedure</h2>
   <p>
    <ol>
+     <li>Use the Wikipedia table to get a full list of postcodes</li>
+      <ul>
+          <li>Read the Wikipedia URL to a Pandas data frame</li>
+          <li>Selectively copy the table with the required data to a nother pandas dataframe</li>
+          <li>
+              Top 5 columns of the dataframe created this way
+            <table border="1">
+              <thead>
+               <tr style="text-align: center; background-color:#b4cfd5" >
+                <th></th>
+                <th>Postal Code</th>
+                <th>District</th>
+                <th>Neighbourhood</th>
+               </tr>
+             </thead>
+            <tbody style="background-color:#d2e4e8">
+             <tr>
+               <th>0</th>
+               <td>M1A</td>
+               <td>Not assigned</td>
+               <td>Not assigned</td>
+             </tr>
+             <tr>
+               <th>1</th>
+               <td>M2A</td>
+               <td>Not assigned</td>
+               <td>Not assigned</td>
+             </tr>
+             <tr>
+              <th>2</th>
+              <td>M3A</td>
+              <td>North York</td>
+              <td>Parkwoods</td>
+             </tr>
+             <tr>
+              <th>3</th>
+              <td>M4A</td>
+              <td>North York</td>
+              <td>Victoria Village</td>
+             </tr>
+             <tr>
+              <th>4</th>
+              <td>M5A</td>
+              <td>Downtown Toronto</td>
+              <td>Regent Park, Harbourfront</td>
+             </tr>
+            </tbody>
+          </table>
+         <li>
+       </ul>
      <li>Obtain a list of schools using the Foursquare API</li>
      <li>Group them by postal code</li>
      <li>Cluster the post codes by using school density</li>
-     <li>Use the Wikipedia table to get a full list of postcodes</li>
      <li>Append a column with the cluster value</li>
      <li>Use Folium to visualize this on a map</li>
    </ol>
   </p>
-
+  
  </body>
 </html> 
 
